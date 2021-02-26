@@ -23,7 +23,6 @@ function rand1to5() {
   var x = Math.floor(Math.random() * 5) + 1;
   return x;
 }
-console.log(rand1to5());
 function isOdd(x) {
   if (x % 2 == 0) {
     return false;
@@ -36,7 +35,7 @@ function isOdd(x) {
 var evenodd = prompt('pari o dispari?');
 var number = prompt('numero da 1 a 5');
 var somma = rand1to5() + parseInt(number);
-console.log(somma);
+console.log('somma: ' + somma);
 
 if ((evenodd == 'pari' || evenodd == 'dispari') && parseInt(number) == number && 1 <= number && number <= 5) { /* tutti i controlli che mi vegono in mente */
   if ((evenodd == 'pari' && !isOdd(somma)) || evenodd == 'dispari' && isOdd(somma)) {
